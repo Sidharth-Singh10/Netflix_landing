@@ -50,15 +50,42 @@
 
         margin-bottom: 150px;
     }
+    #lang
+    {
+        height: 30px; width: 100px; background-color: rgba(0, 0, 0, 0.692); color: white;
+        font-size: 20px;
+        border-style:solid;
+        border-color: black;
+
+    }
+    #signin
+    {
+        position: relative;
+        font-size: 15px;
+        left: 20px; width: 70px; height: 33px;
+        background-color: red; color: white;
+        font-weight: bolder; 
+        border-radius: 5px; border: transparent;
+        transition: all 0.4s ease;
+
+    }
+    #signin:hover{
+        background-color: rgb(255, 0, 0);
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transform: scale(1.2);
+
+
+    }
     #line1{
         
         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         color: white; text-align: center; font-size: 50px; text-wrap:wrap ;
         margin-left: 210px;
-        margin-right: 210px;
+        margin-right: 250px;
+        padding-right: 50px;
         margin-bottom: 0px;
         position: relative; z-index: 1;
-
     }
         
     #line2{
@@ -137,11 +164,11 @@
             <img id="net1" src="Netfli-cropped.svg" height="75px" width="150px">
     
             <form id="form1"style="position: absolute; width: 300px; left:1000px; top:30px;">
-                <select name="lang" id="lang" aria-placeholder="English" style="height: 30px; width: 100px; background-color: rgba(0, 0, 0, 0.692); color: white;">
+                <select name="lang" id="lang" aria-placeholder="English">
                     <option value="English">English</option>
                     <option value="Hindi">हिंदी</option>
                   </select>
-                  <input type="button" value="SIGN IN"  style="position: relative;left: 20px; width: 70px; height: 30px; background-color: red; color: white; font-weight: bolder; border-radius: 5px; border: transparent; ">	
+                  <input type="button" value="SIGN IN" id="signin" >	
     
                 </form>
 
