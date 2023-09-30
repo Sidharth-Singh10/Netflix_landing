@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+     #overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+           
+        }
+        #overlay::before,
+        #overlay::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 50%;
+            background: linear-gradient(rgb(0, 0, 0), transparent);
+        }
+
+        #overlay::before {
+            top: 0;
+      
+        }
+
+        #overlay::after {
+            bottom: 0;
+            transform: scaleY(-1);
+        
+        }
+
+
+        
+    body{
+            background-image: url(bgimg.jpg);
+            background-size: auto;
+        
+      
+    }
+    #net1{
+        position: relative;
+        left: 150px;
+    }
+    #div1
+    {
+
+        margin-bottom: 150px;
+    }
+    #line1{
+        
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: white; text-align: center; font-size: 50px; text-wrap:wrap ;
+        margin-left: 210px;
+        margin-right: 210px;
+        margin-bottom: 0px;
+        position: relative; z-index: 1;
+
+    }
+        
+    #line2{
+        z-index: 2;
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: normal;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        position: relative; z-index: 1;
+    }
+    #line3
+    {
+        z-index: 2;
+        color: white;
+        text-align: center;
+        margin-top: 0px;
+        font-size: 20px;
+        margin-bottom: 0px;
+        position: relative; z-index: 1;
+    }
+    #input1{
+        
+
+        background-color: rgba(0, 0, 0, 0.692);
+        width:340px;
+        height:45px;
+        padding-left: 30px;
+        color: white;
+        font-weight: bolder;
+        font-size: 20px;
+        border-style: none;
+
+    }
+    #form2
+    {   margin-top: 0px;
+        position: relative;
+        left: 30%;
+         z-index: 1
+    
+    }
+    #input2
+    { position: relative;
+        border-radius: 5px;
+        border-style:none;
+        top: 3px;
+        background-color: rgb(193, 0, 0);
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        height: 55px;
+        width:200px;
+        z-index: 1;
+        transition: all 0.4s ease;
+    
+    }
+    #input2:hover{
+        background-color: rgb(255, 0, 0);
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.2);
+        
+    }
+
+  
+</style>
+
+</head>
+
+<body>
+    <div id="overlay"></div>
+    <div id="div1">
+
+            <img id="net1" src="Netfli-cropped.svg" height="75px" width="150px">
+    
+            <form id="form1"style="position: absolute; width: 300px; left:1000px; top:30px;">
+                <select name="lang" id="lang" aria-placeholder="English" style="height: 30px; width: 100px; background-color: rgba(0, 0, 0, 0.692); color: white;">
+                    <option value="English">English</option>
+                    <option value="Hindi">हिंदी</option>
+                  </select>
+                  <input type="button" value="SIGN IN"  style="position: relative;left: 20px; width: 70px; height: 30px; background-color: red; color: white; font-weight: bolder; border-radius: 5px; border: transparent; ">	
+    
+                </form>
+
+
+    </div>
+
+    <div>
+
+
+            <h1 id="line1">
+                Enjoy big movies, hit series and more from ₹ 149.
+            </h1>
+                <br>
+                <h4 id="line2">
+                    Join today. Cancel anytime
+                </h4>
+                <br>
+                <br>
+                <p id="line3">Ready to watch? Enter your email to create or restart your membership.</p>
+                    <br>
+                    <form id="form2">
+                            <input type="text" placeholder="Email address" id="input1">
+                            <input type="button" value="Get Started >" id="input2">
+
+                    </form>
+        
+
+
+    </div>
+    
+
+</body>
+</html>
